@@ -88,13 +88,12 @@ function addStop(){
 
 //弹出视频
 v.onclick = (e)=>{
-    console.log("!23");
     // e.preventDefault();
-    video2.src = "../video/vd2.mp4";
+    video2.src = "https://overwatch.nosdn.127.net/1/images/game/about/video/CoPrF6333-mobile.mp4";
     videos.style.display = "block";
-    console.log(videos);
 }
 cut.onclick = (e)=>{
     e.preventDefault();
+    video2.parentElement.pause();
     videos.style.display = "none";
 }
