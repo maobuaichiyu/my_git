@@ -1,0 +1,228 @@
+body{
+    background-color: #F6F6F6;
+}
+
+section{
+    background-color: #F2F1ED;
+}
+.top-bg{
+    width: 100%;
+    height: 250px;
+    background: url(https://overwatch.nosdn.127.net/1/images/game/about/components/page-headers/bg--desktop-d3c285ad7d.png) no-repeat top;
+    margin-top: -50px;
+   .top-bg-content{
+       width: 1600px;
+       height: 250px;
+       margin: 0 auto;
+       position: relative;
+       h1{
+           font-style: italic;
+           font-size: 77px;
+           line-height: 70px;
+           color:#4B535D;
+           text-align: center;
+           left: 50%;
+           top:60%;
+           transform: translateX(-50%);
+           font-weight: 400;
+           position: absolute;
+       }
+   }
+}
+
+.map-content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 2560px;
+    background-color: #fff;
+    .map-title-content{
+        width: 1360px;
+        height: 215px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-top:40px;
+        padding-left:25px;
+        .title-btn{
+            width: 1360px;
+            height: 40px;
+
+            a{
+                height: 40px;
+                float: left;
+                margin-right: 10px;
+                padding:0 10px;
+                display: flex;
+                align-items: center;
+                span{
+                    display: block;
+                    color:#000;
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+                background-color: #E1E1E3;
+
+                .icon{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+                }
+                &.isActive{
+                    background-color: #00A5E2;
+                    span{
+                        color:#fff;
+                    }
+                    svg{
+                        fill:#f2f1ed;
+                    }
+                }
+            }
+            a:hover{
+                background-color: #596C93;
+                span{
+                    color:#fff;
+                }
+                svg{
+                    fill:#f2f1ed;
+                }
+            }
+            a:focus{
+                background-color: #00A5E2;
+                span{
+                    color:#fff;
+                }
+                svg{
+                    fill:#f2f1ed;
+                }
+            }
+            
+        }
+        .title-description{
+            h3{
+                font-size: 24px;
+                line-height: 27px;
+                color:#333;
+                margin: 20px 0;
+            }
+            p{
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+    .map-list{
+        width: 100%;
+        box-sizing: border-box;
+        padding-top:60px;
+        padding-bottom:60px;
+        background-color: #F2F1ED;
+        .map-list-content{
+            width: 1380px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            transform: translateX(25px);
+            .item{
+                width: 320px;
+                height: 260px;
+                background-color: #fff;
+                margin-bottom: 25px;
+                margin-right:25px;
+                cursor: pointer;
+                .img>img{
+                    width: 320px;
+                    border:0;
+                }
+                .img{
+                    width: 320px;
+                    height: 180px;
+                    overflow: hidden;
+                }
+                p{
+                    height: 35px;
+                   
+                }
+                p>img{
+                    height: 16px;
+                    margin: 5px;
+                    margin-top:10px;
+                    float: left;
+                   
+                }
+                &:hover .img>img{
+                    width: 330px;
+                }
+                span{
+                    display: block;
+                    font-size: 21px;
+                    line-height: 33px;
+                    color:#333;
+                    font-weight: 700;
+                }
+                .icon{
+                    width: 28px;
+                    height: 28px;
+                    fill:#9B9DA2;
+                    margin: 5px 5px 0 5px;
+                }
+            }
+        }
+       
+    }
+}
+
+.share{
+    width: 100%;
+    height: 65px;
+    max-width: 2560px;
+    margin:0 auto;
+    background-color: #141516;
+    box-sizing: border-box;
+    border: 1px solid hsla(0,0%,45%,.7);
+
+    .share-icon{
+        float: right;
+        height: 100%;
+        width: 190px;
+
+        ul{
+            height: 100%;
+            width: 190px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-top: 15px;
+            span{
+                color:#747475;
+                line-height: 35px;
+                font-size: 14px;
+            }
+            .icon{
+                transition: background-position .3s;
+                width: 36px;
+                height: 32px;
+                display: block;
+                margin: 0;
+                background: url(https://overwatch.nosdn.127.net/1/images/news/news-share.png) no-repeat 0 0;
+            }
+            .icon1{
+                background-position: -3px -4px;
+            }
+            .icon1:hover{
+                background-position: -3px -49px;
+            }
+            .icon2{
+                background-position: -122px -4px;
+            }
+            .icon2:hover{
+                background-position: -122px -49px;
+            }
+            .icon3{
+                background-position: -161px -4px;
+            }
+            .icon3:hover{
+                background-position: -161px -49px;
+            }
+        }
+    }
+}
